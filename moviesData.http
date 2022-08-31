@@ -1,0 +1,35 @@
+GET http://localhost:3000/movies/
+
+####
+GET http://localhost:3000/movies/80/
+
+####
+POST http://localhost:3000/movies/
+Content-Type: application/json 
+
+{
+    "directorId": 12,
+    "movieName": "Surya",
+    "leadActor": "Surya"
+}
+
+####
+PUT http://localhost:3000/movies/12/
+Content-Type: application/json
+
+{
+    "directorId": 15,
+    "movieName": "Success",
+    "leadActor": "Chandra Sekhar"
+}
+
+####
+DELETE http://localhost:3000/movies/60 
+
+
+####
+GET http://localhost:3000/directors/
+
+
+####
+GET http://localhost:3000/directors/15/movies/
